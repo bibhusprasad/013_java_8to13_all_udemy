@@ -17,8 +17,7 @@ public class $03_BiFunctionExample {
 		// instructor has online courses and return a Map<String, Integer>
 
 		System.out.println("\nPrint all Instructors name and years of Experience in Map who teaches online");
-		final BiFunction<List<Instructor>, Predicate<Instructor>, Map<String, Integer>> biFunction = (instructors,
-				online) -> {
+		final BiFunction<List<Instructor>, Predicate<Instructor>, Map<String, Integer>> biFunction = (instructors, online) -> {
 			final Map<String, Integer> map = new HashMap<>();
 			instructors.forEach(instructor -> {
 				if (online.test(instructor)) {

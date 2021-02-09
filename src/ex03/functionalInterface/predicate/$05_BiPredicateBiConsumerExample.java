@@ -16,20 +16,16 @@ public class $05_BiPredicateBiConsumerExample {
 
 		System.out.println(
 				"\nBiConsumer Print name and courses of Instructors who teaches online and having more than 10 years of experience");
-		final BiConsumer<String, List<String>> biConsumer = (name, courses) -> System.out
-				.println("Name is " + name + " and Courses are " + courses);
+		final BiConsumer<String, List<String>> biConsumer =
+				(name, courses) -> System.out.println("Name is " + name + " and Courses are " + courses);
 		instructorList.forEach(instructor -> {
 			if (biPredicate.test(instructor.isOnlineCourses(), instructor.getYearOfExperience())) {
 				biConsumer.accept(instructor.getName(), instructor.getCourses());
 			}
 		});
 		// OP:
-		// BiConsumer Print name and courses of Instructors who teaches online and
-		// having more than 10 years of experience
-		//
-		// Name is Anthony and Courses are [Java Programming, Angular Programming, React
-		// Native]
-		// Name is Syed and Courses are [Java Programming, Java Multi-Threaded
-		// Programming, React Native]
+		// BiConsumer Print name and courses of Instructors who teaches online and having more than 10 years of experience
+		// Name is Anthony and Courses are [Java Programming, Angular Programming, React Native]
+		// Name is Syed and Courses are [Java Programming, Java Multi-Threaded Programming, React Native]
 	}
 }

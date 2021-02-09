@@ -3,6 +3,7 @@ package ex01.basic;
 import java.util.List;
 
 public class Instructor {
+
 	String name;
 	int yearOfExperience;
 	String title;
@@ -13,8 +14,12 @@ public class Instructor {
 	public Instructor() {
 	}
 
-	public Instructor(final String name, final int yearOfExperience, final String title, final String gender,
-			final boolean onlineCourses, final List<String> courses) {
+	public Instructor(final String name,
+					  final int yearOfExperience,
+					  final String title,
+					  final String gender,
+					  final boolean onlineCourses,
+					  final List<String> courses) {
 		this.name = name;
 		this.yearOfExperience = yearOfExperience;
 		this.title = title;
@@ -73,9 +78,12 @@ public class Instructor {
 
 	@Override
 	public String toString() {
-		return "Instructor{" + "name='" + this.name + '\'' + ", yearOfExperience=" + this.yearOfExperience + ", title='"
-				+ this.title + '\'' + ", gender='" + this.gender + '\'' + ", onlineCourses=" + this.onlineCourses
-				+ ", courses=" + this.courses + '}';
+		return "Instructor{" + "name='" + this.name + '\'' + ", " +
+								"yearOfExperience=" + this.yearOfExperience + ", " +
+								"title='" + this.title + '\'' + ", " +
+								"gender='" + this.gender + '\'' + ", " +
+								"onlineCourses=" + this.onlineCourses + ", " +
+								"courses=" + this.courses + '}';
 	}
 
 }

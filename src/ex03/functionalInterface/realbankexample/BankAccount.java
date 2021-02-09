@@ -57,8 +57,7 @@ public class BankAccount {
 
 	@Override
 	public String toString() {
-		return "BankAccount{" + "id=" + this.id + ", balance=" + this.balance + ", accountName='" + this.accountName
-				+ '\'' + '}';
+		return "BankAccount{" + "id=" + this.id + ", balance=" + this.balance + ", accountName='" + this.accountName + '\'' + '}';
 	}
 
 	public int getId() {

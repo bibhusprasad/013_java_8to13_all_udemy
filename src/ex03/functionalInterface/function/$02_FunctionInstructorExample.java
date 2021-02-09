@@ -41,8 +41,7 @@ public class $02_FunctionInstructorExample {
 			return map;
 		};
 		System.out.println(function2.apply(instructorList));
-		// OP: Print all Instructors name and years of Experience in Map who teaches
-		// online
+		// OP: Print all Instructors name and years of Experience in Map who teaches online
 		// OP: {Mike=10, Syed=15, Anthony=15}
 	}
 }

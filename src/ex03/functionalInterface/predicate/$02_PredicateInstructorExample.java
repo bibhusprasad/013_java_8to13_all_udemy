@@ -22,15 +22,9 @@ public class $02_PredicateInstructorExample {
 		});
 		// OP:
 		// Print Instructors who teaches online
-		// Instructor{name='Mike', yearOfExperience=10, title='Software Developer',
-		// gender='M', onlineCourses=true, courses=[Java Programming, C++ Programming,
-		// Python Programming]}
-		// Instructor{name='Anthony', yearOfExperience=15, title='Senior Developer',
-		// gender='M', onlineCourses=true, courses=[Java Programming, Angular
-		// Programming, React Native]}
-		// Instructor{name='Syed', yearOfExperience=15, title='Principal Engineer',
-		// gender='M', onlineCourses=true, courses=[Java Programming, Java
-		// Multi-Threaded Programming, React Native]}
+		// Instructor{name='Mike', yearOfExperience=10, title='Software Developer', gender='M', onlineCourses=true, courses=[Java Programming, C++ Programming, Python Programming]}
+		// Instructor{name='Anthony', yearOfExperience=15, title='Senior Developer', gender='M', onlineCourses=true, courses=[Java Programming, Angular Programming, React Native]}
+		// Instructor{name='Syed', yearOfExperience=15, title='Principal Engineer', gender='M', onlineCourses=true, courses=[Java Programming, Java Multi-Threaded Programming, React Native]}
 
 		System.out.println("\nPrint Instructors who teaches online having more than 10 years of experience");
 		instructorList.forEach(instructor -> {
@@ -40,11 +34,7 @@ public class $02_PredicateInstructorExample {
 		});
 		// OP
 		// Print Instructors who teaches online having more than 10 years of experience
-		// Instructor{name='Anthony', yearOfExperience=15, title='Senior Developer',
-		// gender='M', onlineCourses=true, courses=[Java Programming, Angular
-		// Programming, React Native]}
-		// Instructor{name='Syed', yearOfExperience=15, title='Principal Engineer',
-		// gender='M', onlineCourses=true, courses=[Java Programming, Java
-		// Multi-Threaded Programming, React Native]}
+		// Instructor{name='Anthony', yearOfExperience=15, title='Senior Developer', gender='M', onlineCourses=true, courses=[Java Programming, Angular Programming, React Native]}
+		// Instructor{name='Syed', yearOfExperience=15, title='Principal Engineer', gender='M', onlineCourses=true, courses=[Java Programming, Java Multi-Threaded Programming, React Native]}
 	}
 }

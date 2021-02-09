@@ -18,39 +18,21 @@ public class $02_ConsumerInstructorExample {
 		}
 		// OP:
 		// Print all the values of Instructor
-		// Instructor{name='Mike', yearOfExperience=10, title='Software Developer',
-		// gender='M', onlineCourses=true, courses=[Java Programming, C++ Programming,
-		// Python Programming]}
-		// Instructor{name='Jenny', yearOfExperience=5, title='Engineer', gender='F',
-		// onlineCourses=false, courses=[Multi-Threaded Programming, CI/CD, Unit
-		// Testing]}
-		// Instructor{name='Gene', yearOfExperience=6, title='Manager', gender='M',
-		// onlineCourses=false, courses=[C++ Programming, C Programming, React Native]}
-		// Instructor{name='Anthony', yearOfExperience=15, title='Senior Developer',
-		// gender='M', onlineCourses=true, courses=[Java Programming, Angular
-		// Programming, React Native]}
-		// Instructor{name='Syed', yearOfExperience=15, title='Principal Engineer',
-		// gender='M', onlineCourses=true, courses=[Java Programming, Java
-		// Multi-Threaded Programming, React Native]}
+		// Instructor{name='Mike', yearOfExperience=10, title='Software Developer',gender='M', onlineCourses=true, courses=[Java Programming, C++ Programming, Python Programming]}
+		// Instructor{name='Jenny', yearOfExperience=5, title='Engineer', gender='F', onlineCourses=false, courses=[Multi-Threaded Programming, CI/CD, Unit Testing]}
+		// Instructor{name='Gene', yearOfExperience=6, title='Manager', gender='M', onlineCourses=false, courses=[C++ Programming, C Programming, React Native]}
+		// Instructor{name='Anthony', yearOfExperience=15, title='Senior Developer', gender='M', onlineCourses=true, courses=[Java Programming, Angular Programming, React Native]}
+		// Instructor{name='Syed', yearOfExperience=15, title='Principal Engineer', gender='M', onlineCourses=true, courses=[Java Programming, Java Multi-Threaded Programming, React Native]}
 
 		System.out.println("\nPrint all the values of Instructor using forEach");
 		instructorList.forEach(c1);
 		// OP:
 		// Print all the values of Instructor using forEach
-		// Instructor{name='Mike', yearOfExperience=10, title='Software Developer',
-		// gender='M', onlineCourses=true, courses=[Java Programming, C++ Programming,
-		// Python Programming]}
-		// Instructor{name='Jenny', yearOfExperience=5, title='Engineer', gender='F',
-		// onlineCourses=false, courses=[Multi-Threaded Programming, CI/CD, Unit
-		// Testing]}
-		// Instructor{name='Gene', yearOfExperience=6, title='Manager', gender='M',
-		// onlineCourses=false, courses=[C++ Programming, C Programming, React Native]}
-		// Instructor{name='Anthony', yearOfExperience=15, title='Senior Developer',
-		// gender='M', onlineCourses=true, courses=[Java Programming, Angular
-		// Programming, React Native]}
-		// Instructor{name='Syed', yearOfExperience=15, title='Principal Engineer',
-		// gender='M', onlineCourses=true, courses=[Java Programming, Java
-		// Multi-Threaded Programming, React Native]}
+		// Instructor{name='Mike', yearOfExperience=10, title='Software Developer', gender='M', onlineCourses=true, courses=[Java Programming, C++ Programming, Python Programming]}
+		// Instructor{name='Jenny', yearOfExperience=5, title='Engineer', gender='F', onlineCourses=false, courses=[Multi-Threaded Programming, CI/CD, Unit Testing]}
+		// Instructor{name='Gene', yearOfExperience=6, title='Manager', gender='M', onlineCourses=false, courses=[C++ Programming, C Programming, React Native]}
+		// Instructor{name='Anthony', yearOfExperience=15, title='Senior Developer', gender='M', onlineCourses=true, courses=[Java Programming, Angular Programming, React Native]}
+		// Instructor{name='Syed', yearOfExperience=15, title='Principal Engineer', gender='M', onlineCourses=true, courses=[Java Programming, Java Multi-Threaded Programming, React Native]}
 
 		System.out.println("\nPrint all the names of Instructor using forEach");
 		final Consumer<Instructor> c2 = i -> System.out.println(i.getName());
@@ -87,14 +69,9 @@ public class $02_ConsumerInstructorExample {
 		};
 		instructorList.forEach(c4);
 		// OP:
-		// Print all the Instructor having more than 10 years of Experience using
-		// forEach
-		// Instructor{name='Anthony', yearOfExperience=15, title='Senior Developer',
-		// gender='M', onlineCourses=true, courses=[Java Programming, Angular
-		// Programming, React Native]}
-		// Instructor{name='Syed', yearOfExperience=15, title='Principal Engineer',
-		// gender='M', onlineCourses=true, courses=[Java Programming, Java
-		// Multi-Threaded Programming, React Native]}
+		// Print all the Instructor having more than 10 years of Experience using forEach
+		// Instructor{name='Anthony', yearOfExperience=15, title='Senior Developer', gender='M', onlineCourses=true, courses=[Java Programming, Angular Programming, React Native]}
+		// Instructor{name='Syed', yearOfExperience=15, title='Principal Engineer', gender='M', onlineCourses=true, courses=[Java Programming, Java Multi-Threaded Programming, React Native]}
 
 		System.out.println(
 				"\nPrint all the Instructor having more than 5 years of Experience and teaches course online using forEach");
@@ -105,17 +82,10 @@ public class $02_ConsumerInstructorExample {
 		};
 		instructorList.forEach(c5);
 		// OP:
-		// Print all the Instructor having more than 5 years of Experience and teaches
-		// course online using forEach
-		// Instructor{name='Mike', yearOfExperience=10, title='Software Developer',
-		// gender='M', onlineCourses=true, courses=[Java Programming, C++ Programming,
-		// Python Programming]}
-		// Instructor{name='Anthony', yearOfExperience=15, title='Senior Developer',
-		// gender='M', onlineCourses=true, courses=[Java Programming, Angular
-		// Programming, React Native]}
-		// Instructor{name='Syed', yearOfExperience=15, title='Principal Engineer',
-		// gender='M', onlineCourses=true, courses=[Java Programming, Java
-		// Multi-Threaded Programming, React Native]}
+		// Print all the Instructor having more than 5 years of Experience and teaches course online using forEach
+		// Instructor{name='Mike', yearOfExperience=10, title='Software Developer', gender='M', onlineCourses=true, courses=[Java Programming, C++ Programming, Python Programming]}
+		// Instructor{name='Anthony', yearOfExperience=15, title='Senior Developer', gender='M', onlineCourses=true, courses=[Java Programming, Angular Programming, React Native]}
+		// Instructor{name='Syed', yearOfExperience=15, title='Principal Engineer', gender='M', onlineCourses=true, courses=[Java Programming, Java Multi-Threaded Programming, React Native]}
 
 	}
 }
